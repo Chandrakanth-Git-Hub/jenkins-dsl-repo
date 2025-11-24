@@ -12,7 +12,7 @@ job('example-freestyle-job') {
     scm {
         git {
             remote {
-                url('https://your-git-server/your-org/sample-app.git')
+                url('https://github.com/Chandrakanth-Git-Hub/jenkins-dsl-repo.git')
                 // credentials('git-credentials') // uncomment if needed
             }
             branch('$BRANCH_NAME')
