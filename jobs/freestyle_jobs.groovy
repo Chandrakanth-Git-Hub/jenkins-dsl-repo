@@ -24,7 +24,6 @@ job('example-freestyle-job') {
 
     steps {
         shell('echo "Building $BRANCH_NAME for $ENVIRONMENT"')
-        shell('if [ "$SKIP_TESTS" = "true" ]; then echo "Skipping tests"; el
-se echo "Running tests"; fi')
+        shell('if [ "$SKIP_TESTS" = "true" ]; then echo "Skipping tests"; else echo "Running tests"; fi')
     }
 }
